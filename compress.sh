@@ -4,7 +4,7 @@ for d in */ ; do
     d="${d%/}"
     #echo "${d##*/}"
     echo $PWD/$d
-    tar -cvJf $d.tar.xz "$PWD/$d"
+    tar -cvJf $d.tar.xz "$d"
     fi
 done
 
